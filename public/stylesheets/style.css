@@ -1,0 +1,101 @@
+
+html{
+  background-color: #121212;
+}
+body {
+  background-color: #121212;
+  color: white;
+}
+
+/*Animaciones de los textos del nav*/
+a.nav-link {
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+a.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #8A2BE2;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+a.nav-link:hover {
+  color: #8A2BE2;
+}
+
+a.nav-link:hover::after {
+  width: 100%;
+}
+
+/*Animación del navbar*/
+.navbar {
+  background: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.9) /* Color oscuro con transparencia */
+}
+
+/*Animación del bóton cotizar*/
+a.btn-primary {
+  background-color: #121212;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para el fondo y la transformación */
+}
+
+a.btn-primary:hover {
+  background-color: #007BFF;
+  transform: scale(1.1); /* Aumenta el tamaño del botón al hacer hover */
+}
+
+/*Degradado colores de Flux.dev*/
+#fluxText{
+  background: linear-gradient(50deg, #007BFF, #8A2BE2);
+    background-clip: text; /* Versión estándar */
+    -webkit-background-clip: text; /* Para navegadores WebKit */
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* Asegura que otros navegadores sin soporte vean el texto */
+    display: inline-block;
+}
+
+/*background de la info de inicio*/
+.gradient-bg {
+  background: url('/images/fondo.jpg') no-repeat center center;
+  background-size: no-repeat;
+  padding: 220px 0;
+  color: white;
+}
+
+.my-card{
+  color: white;
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.my-card:hover {
+  color: white;
+  background: #007BFF;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transform: scale(1.1); /* Aumenta el tamaño del botón al hacer hover */
+}
+
+section{
+  background-color: #121212;
+  color: white;
+}
+footer{
+  background-color: #121212;
+  color: white;
+}
