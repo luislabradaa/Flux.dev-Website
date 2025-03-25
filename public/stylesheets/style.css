@@ -91,6 +91,34 @@ a.btn-primary:hover {
   transform: scale(1.1); /* Aumenta el tamaño del botón al hacer hover */
 }
 
+.my-card2:hover {
+  color: white;
+  background: #3D47C5;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transform: scale(1.1); /* Aumenta el tamaño del botón al hacer hover */
+}
+
+.my-card3:hover {
+  color: white;
+  background: #8A2BE2;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transform: scale(1.1); /* Aumenta el tamaño del botón al hacer hover */
+}
+
+
+/*Animación de imagenes*/
+.hover-effect {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-effect:hover {
+  transform: scale(1.1);
+}
+
 section{
   background-color: #121212;
   color: white;
